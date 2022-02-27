@@ -11,7 +11,13 @@ import { ConvertPipe } from './pipes/convert.pipe';
 import { PagesComponent } from './components/section-6/pages/pages.component';
 import { ClassDirective } from './directive/class.directive';
 import { TimesDirective } from './directive/times.directive';
-
+import { CompsComponent } from './components/section-7/comps/comps.component';
+import { ElementHomeComponent } from './modules/element/element-home/element-home.component';
+import { CollectionHomeComponent } from './modules/collection/collection-home/collection-home.component';
+import { CollectionModule } from './modules/collection/collection.module';
+import { HomeComponent } from './components/section-7/home/home.component';
+import { NotFoundComponent } from './components/section-7/not-found/not-found.component';
+import { TimeDirective } from './directive/time.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,11 +28,17 @@ import { TimesDirective } from './directive/times.directive';
     ConvertPipe,
     PagesComponent,
     ClassDirective,
-    TimesDirective
+    TimesDirective,
+    CompsComponent,
+    HomeComponent,
+    NotFoundComponent,
+    TimeDirective,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    CollectionModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
