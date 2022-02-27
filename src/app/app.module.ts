@@ -7,7 +7,10 @@ import { SectionTwoComponent } from './components/section-two/section-two.compon
 import { CardsComponent } from './components/section-3/cards/cards.component';
 import { TypingComponent } from './components/section-4/typing/typing.component';
 import { PipesComponent } from './components/section-5/pipes/pipes.component';
-import { ConvertPipe } from './components/pipes/convert.pipe';
+import { ConvertPipe } from './pipes/convert.pipe';
+import { PagesComponent } from './components/section-6/pages/pages.component';
+import { ClassDirective } from './directive/class.directive';
+import { TimesDirective } from './directive/times.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { ConvertPipe } from './components/pipes/convert.pipe';
     CardsComponent,
     TypingComponent,
     PipesComponent,
-    ConvertPipe
+    ConvertPipe,
+    PagesComponent,
+    ClassDirective,
+    TimesDirective
   ],
   imports: [
     BrowserModule,
