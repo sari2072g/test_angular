@@ -1,0 +1,32 @@
+<h1> Password Generator </h1>
+<div>
+  <label> Enter Length </label>
+  <input (input)="onChangeLength($event.target.value)"/>
+</div>
+
+<div>
+  <label> Use Letters </label>
+  <input (change)="onChangeUserLetters()" type = "checkbox">
+</div>
+
+<div>
+  <label> Use Numbers </label>
+  <input (change)="onChangeUserNumbers()" type = "checkbox">
+</div>
+
+<div>
+  <label>Use Symbols</label>
+  <input (change)="onChangeUserSymbols()" type = "checkbox">
+</div>
+
+<div>
+  <button [disabled]="!(length && ( includeLetters || includeNumbers || includeSymbols ))" 
+  (click) = "onButtonClick()"
+  > Generate! 
+</button>
+</div>
+
+<div>
+  <label> Your password </label>
+  <input [value] = "password">
+</div>
