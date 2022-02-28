@@ -17,6 +17,9 @@ import { CollectionHomeComponent } from './modules/collection/collection-home/co
 import { CollectionModule } from './modules/collection/collection.module';
 import { HomeComponent } from './components/section-7/home/home.component';
 import { NotFoundComponent } from './components/section-7/not-found/not-found.component';
+import { StatisticComponent } from './modules/views/statistic/statistic.component';
+import { ViewsHomeComponent } from './modules/views/views-home/views-home.component';
+import { ViewsModule } from './modules/views/views.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +34,6 @@ import { NotFoundComponent } from './components/section-7/not-found/not-found.co
     CompsComponent,
     HomeComponent,
     NotFoundComponent,
-    
   ],
   imports: [
     BrowserModule,
