@@ -1,0 +1,14 @@
+<table [ngClass]="classNames" class="ui table">
+    <thead>
+        <tr>
+            <th *ngFor="let item of headers">{{item.label}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr  *ngFor="let data of data">
+           <td *ngFor="let header of headers"> 
+             {{data[header.key]}}
+           </td>
+        </tr>
+    </tbody>
+</table>

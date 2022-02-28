@@ -17,7 +17,6 @@ import { CollectionHomeComponent } from './modules/collection/collection-home/co
 import { CollectionModule } from './modules/collection/collection.module';
 import { HomeComponent } from './components/section-7/home/home.component';
 import { NotFoundComponent } from './components/section-7/not-found/not-found.component';
-import { TimeDirective } from './directive/time.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +31,6 @@ import { TimeDirective } from './directive/time.directive';
     CompsComponent,
     HomeComponent,
     NotFoundComponent,
-    TimeDirective,
     
   ],
   imports: [
