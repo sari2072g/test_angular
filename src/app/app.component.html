@@ -19,7 +19,7 @@
 
 <!-- <app-collection-home></app-collection-home> -->
 
-<div class="ui container">
+<!-- <div class="ui container">
     <div class="ui secondary pointing menu">
         <a routerLink="/elements" routerLinkActive="active" class="item"> Element </a>
         <a routerLink="/collection"  routerLinkActive="active" class="item"> Collection </a>
@@ -30,4 +30,8 @@
 </div>
 <div class="ui segment">
     <router-outlet></router-outlet>
+</div> -->
+<div class="container">
+    <app-search-bar (submitted)="onTerm($event)" ></app-search-bar>
+    <app-page-list *ngIf="pages.length" [pages]="pages" ></app-page-list>
 </div>

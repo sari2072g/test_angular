@@ -20,6 +20,9 @@ import { NotFoundComponent } from './components/section-7/not-found/not-found.co
 import { StatisticComponent } from './modules/views/statistic/statistic.component';
 import { ViewsHomeComponent } from './modules/views/views-home/views-home.component';
 import { ViewsModule } from './modules/views/views.module';
+import { SearchBarComponent } from './components/section-13/search-bar/search-bar.component';
+import { PageListComponent } from './components/section-13/page-list/page-list.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,9 +37,12 @@ import { ViewsModule } from './modules/views/views.module';
     CompsComponent,
     HomeComponent,
     NotFoundComponent,
+    SearchBarComponent,
+    PageListComponent,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     CollectionModule,
     AppRoutingModule,
   ],
