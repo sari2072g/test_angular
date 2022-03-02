@@ -23,6 +23,7 @@ import { ViewsModule } from './modules/views/views.module';
 import { SearchBarComponent } from './components/section-13/search-bar/search-bar.component';
 import { PageListComponent } from './components/section-13/page-list/page-list.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { PhotoComponent } from './components/section-17/photo/photo.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +40,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     NotFoundComponent,
     SearchBarComponent,
     PageListComponent,
+    PhotoComponent,
   ],
   imports: [
     BrowserModule,
