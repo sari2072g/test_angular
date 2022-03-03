@@ -10,7 +10,11 @@ import { SegmentComponent } from './segment/segment.component';
 
 
 @NgModule({
-  declarations: [ElementHomeComponent, PlaceholderComponent,TimeDirective, SegmentComponent],
+  declarations: [
+    ElementHomeComponent, 
+    PlaceholderComponent, 
+    TimeDirective, 
+    SegmentComponent],
   imports: [
     CommonModule,
     ElementRoutingModule,

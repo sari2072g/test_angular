@@ -13,9 +13,8 @@ opendItemIndex = 0;
   ngOnInit(): void {
   }
   onClick(index: number) {
-    if(index === this.opendItemIndex) {
-      this.opendItemIndex = -1;
-    } else {
+    if(index === this.opendItemIndex) this.opendItemIndex = -1;
+    else {
       this.opendItemIndex = index;
     }
   }

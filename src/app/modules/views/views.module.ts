@@ -9,7 +9,11 @@ import { ItemListComponent } from './item-list/item-list.component';
 
 
 @NgModule({
-  declarations: [ViewsHomeComponent, StatisticComponent, ItemListComponent],
+  declarations: [
+  ViewsHomeComponent, 
+  StatisticComponent, 
+  ItemListComponent,
+],
   imports: [
     CommonModule,
     ViewsRoutingModule,

@@ -14,7 +14,6 @@ const routes: Routes = [
       { path: '', component: BiographyComponent},
       { path: 'companeis', component: CompaniesComponent},
       { path: 'partners', component: PartnersComponent},
-
     ]
   },
 

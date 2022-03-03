@@ -12,7 +12,13 @@ import { TabsComponent } from './tabs/tabs.component';
 
 
 @NgModule({
-  declarations: [CollectionHomeComponent, TableComponent, BiographyComponent, CompaniesComponent, PartnersComponent, TabsComponent],
+  declarations: [
+    CollectionHomeComponent,
+    TableComponent,
+    BiographyComponent, 
+    CompaniesComponent, 
+    PartnersComponent, 
+    TabsComponent],
   imports: [
     CommonModule,
     CollectionRoutingModule,
