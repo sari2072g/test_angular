@@ -29,6 +29,8 @@ import { CardFormsComponent } from './components/section-18/card-forms/card-form
 import { InputComponent } from './components/section-18/input/input.component';
 import { CardComponent } from './components/section-18/card/card.component';
 import { EmailFormComponent } from './components/section-19/email-form/email-form.component';
+import { EquationComponent } from './components/section-20/equation/equation.component';
+import { AnswerHighlightDirective } from './components/section-20/answer-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -51,6 +53,8 @@ import { EmailFormComponent } from './components/section-19/email-form/email-for
     InputComponent,
     CardComponent,
     EmailFormComponent,
+    EquationComponent,
+    AnswerHighlightDirective,
   ],
   imports: [
     BrowserModule,
