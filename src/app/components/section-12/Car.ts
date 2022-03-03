@@ -1,8 +1,8 @@
 export class Car {
-    year = 2000
+    year = 2000;
 
     constructor() {
-       this.year = 1000 
+       this.year = 1000; 
     }
     drive(speed: number) {
         console.log(`Driving at ${speed}` );

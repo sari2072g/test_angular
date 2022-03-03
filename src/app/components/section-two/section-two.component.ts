@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./section-two.component.css']
 })
 export class SectionTwoComponent implements OnInit {
-  password='';
-  length=0;
+  password = '';
+  length = 0;
   includeLetters = false;
   includeNumbers = false;
-  includeSymbols = false
+  includeSymbols = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -22,15 +22,9 @@ export class SectionTwoComponent implements OnInit {
     const symbols = '!@#$%^&*()';
 
     let validChar = '';
-    if(this.includeLetters) {
-      validChar += letters;
-    }
-    if(this.includeNumbers) {
-      validChar += numbers;
-    }
-    if(this.includeSymbols) {
-      validChar += symbols;
-    }
+    if(this.includeLetters) validChar += letters;
+    if(this.includeNumbers) validChar += numbers;
+    if(this.includeSymbols) validChar += symbols;
     let generatedPassword = '';
     for(let i = 0; i < this.length; i++) {
       const index = Math.floor(Math.random() * validChar.length);
@@ -52,7 +46,7 @@ export class SectionTwoComponent implements OnInit {
    this.includeSymbols = !this.includeSymbols;
   }
 
-  onChangeLength(value:string) {
+  onChangeLength(value: string) {
    const parsedValue = Number(value);
 
    if(!isNaN(parsedValue))

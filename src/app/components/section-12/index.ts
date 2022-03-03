@@ -6,7 +6,7 @@
 // //     year:number;
 // //     constructor(color: string, year: number) {
 // //         this.color = color;
-// //         this.year = year
+// //         this.year = year;
 // //     }
 // //     drive() {
 // //         console.log('cccccc');
@@ -41,7 +41,7 @@ class Car {
 }
 const csr = new Car();
 const startDrive=(drive: Driveable) => {
-    drive.drive() 
+    drive.drive();
 }
 // startDrive(csr)
 
@@ -50,7 +50,7 @@ export class Numberholder<T> {
     value: T
 }
 const numberholder = new Numberholder<string>();
-numberholder.value = '10'
+numberholder.value = '10';
 
 new Numberholder<number>();
 new Numberholder<[]>();

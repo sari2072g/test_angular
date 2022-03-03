@@ -57,6 +57,7 @@ export class PagesComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
   checkWindowsIndex(index: number) {
     return Math.abs(this.currentPage - index) < 5
   }
