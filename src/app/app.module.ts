@@ -24,10 +24,11 @@ import { SearchBarComponent } from './components/section-13/search-bar/search-ba
 import { PageListComponent } from './components/section-13/page-list/page-list.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { PhotoComponent } from './components/section-17/photo/photo.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CardFormsComponent } from './components/section-18/card-forms/card-forms.component';
 import { InputComponent } from './components/section-18/input/input.component';
 import { CardComponent } from './components/section-18/card/card.component';
+import { EmailFormComponent } from './components/section-19/email-form/email-form.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { CardComponent } from './components/section-18/card/card.component';
     CardFormsComponent,
     InputComponent,
     CardComponent,
+    EmailFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,6 +58,7 @@ import { CardComponent } from './components/section-18/card/card.component';
     HttpClientModule,
     CollectionModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
