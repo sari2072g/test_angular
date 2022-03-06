@@ -31,6 +31,9 @@ import { CardComponent } from './components/section-18/card/card.component';
 import { EmailFormComponent } from './components/section-19/email-form/email-form.component';
 import { EquationComponent } from './components/section-20/equation/equation.component';
 import { AnswerHighlightDirective } from './components/section-20/answer-highlight.directive';
+import { SigninComponent } from './components/section 21/signin/signin.component';
+import { SignupComponent } from './components/section 21/signup/signup.component';
+import { AuthModule } from './components/section 21/auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -55,13 +58,16 @@ import { AnswerHighlightDirective } from './components/section-20/answer-highlig
     EmailFormComponent,
     EquationComponent,
     AnswerHighlightDirective,
+    SigninComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     HttpClientModule,
-    CollectionModule,
+   // CollectionModule,
     AppRoutingModule,
+    AuthModule,
     FormsModule
   ],
   providers: [],
