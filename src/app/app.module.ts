@@ -22,7 +22,7 @@ import { ViewsHomeComponent } from './modules/views/views-home/views-home.compon
 import { ViewsModule } from './modules/views/views.module';
 import { SearchBarComponent } from './components/section-13/search-bar/search-bar.component';
 import { PageListComponent } from './components/section-13/page-list/page-list.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { PhotoComponent } from './components/section-17/photo/photo.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CardFormsComponent } from './components/section-18/card-forms/card-forms.component';
@@ -31,9 +31,11 @@ import { CardComponent } from './components/section-18/card/card.component';
 import { EmailFormComponent } from './components/section-19/email-form/email-form.component';
 import { EquationComponent } from './components/section-20/equation/equation.component';
 import { AnswerHighlightDirective } from './components/section-20/answer-highlight.directive';
-import { SigninComponent } from './components/section 21/signin/signin.component';
-import { SignupComponent } from './components/section 21/signup/signup.component';
+import { SigninComponent } from './components/section 21/auth/signin/signin.component';
+import { SignupComponent } from './components/section 21/auth/signup/signup.component';
 import { AuthModule } from './components/section 21/auth/auth.module';
+import { AuthHttpInterceptor } from './components/section 21/auth-http-interceptor';
+import { SignoutComponent } from './components/section 21/auth/signout/signout.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +62,7 @@ import { AuthModule } from './components/section 21/auth/auth.module';
     AnswerHighlightDirective,
     SigninComponent,
     SignupComponent,
+    SignoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -70,7 +73,9 @@ import { AuthModule } from './components/section 21/auth/auth.module';
     AuthModule,
     FormsModule
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS, useClass: AuthHttpInterceptor, multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { SigninComponent } from './components/section 21/signin/signin.component';
-import { SignupComponent } from './components/section 21/signup/signup.component';
+import { SigninComponent } from './components/section 21/auth/signin/signin.component';
+import { SignupComponent } from './components/section 21/auth/signup/signup.component';
 import { HomeComponent } from './components/section-7/home/home.component';
 import { NotFoundComponent } from './components/section-7/not-found/not-found.component';
 
@@ -11,6 +11,11 @@ const routes: Routes = [
     path: '', loadChildren: () =>
       import('./components/section 21/auth/auth.module').
         then((m) => m.AuthModule)
+  },
+  {
+    path: 'inbox', loadChildren: () =>
+      import('./components/section 21/inbox/inbox.module').
+        then((m) => m.InboxModule)
   },
   {
     path: 'elements', loadChildren: () =>
