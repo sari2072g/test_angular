@@ -62,8 +62,7 @@ import { SignoutComponent } from './components/section 21/auth/signout/signout.c
     AnswerHighlightDirective,
     SigninComponent,
     SignupComponent,
-    SignoutComponent,
-  ],
+    SignoutComponent,  ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,

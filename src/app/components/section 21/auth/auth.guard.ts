@@ -22,7 +22,7 @@ export class AuthGuard implements CanLoad {
       skipWhile((value) => value === null ),
       take(1),
       tap((authicated) => {
-        if(!authicated) {
+        if(authicated) {
           this.router.navigateByUrl('/');
         }
       })
