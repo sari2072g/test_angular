@@ -15,7 +15,6 @@ export class EmailIndexComponent implements OnInit {
     this.emailService.getEmailes()
     .subscribe((emails) => {
       this.emails = emails;
-    })
+    });
   }
-
 }

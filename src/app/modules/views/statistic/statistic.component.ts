@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./statistic.component.css']
 })
 export class StatisticComponent implements OnInit {
-@Input() data = [];
+  @Input() data = [];
   constructor() { }
 
   ngOnInit(): void {

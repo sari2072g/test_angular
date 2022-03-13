@@ -17,7 +17,7 @@ authForm = new FormGroup({
     Validators.required,
     Validators.minLength(3),
     Validators.maxLength(20),
-    Validators.pattern(/^[a-z0-9]+$/)
+    Validators.pattern(/^[a-z0-9]+$/),
   ], 
   [this.uniqueUsername.validate]),
   password: new FormControl('', [
@@ -35,7 +35,7 @@ authForm = new FormGroup({
     private matchPassword: MatchPassword,
     private uniqueUsername: UniqueUsername,
     private authService: AuthService,
-    private router: Router
+    private router: Router,
     ) { }
 
   ngOnInit(): void {
@@ -51,9 +51,9 @@ authForm = new FormGroup({
       },
       error: err => {
         if(!err.status) {
-        this.authForm.setErrors( { noConnection: true })
+        this.authForm.setErrors( { noConnection: true });
         } else {
-          this.authForm.setErrors( { unKnownError: true })
+          this.authForm.setErrors( { unKnownError: true });
         }
       }
     })

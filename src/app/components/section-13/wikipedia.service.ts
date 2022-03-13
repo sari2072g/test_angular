@@ -47,6 +47,6 @@ export class WikipediaService {
         srsearch: term,
         origin: '*',
       }
-    })//.pipe(pluck('query', 'search'))
+    });//.pipe(pluck('query', 'search'))
   }
 }

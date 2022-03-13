@@ -29,8 +29,10 @@
       </div>
 
       <div>
-        <button [disabled]="!(length && ( includeLetters || includeNumbers || includeSymbols ))"
-         class="button is-link-is-full"  (click)="onButtonClick()"> Generate!
+        <button 
+        [disabled]="!(length && ( includeLetters || includeNumbers || includeSymbols ))"
+        class="button is-link-is-full"  (click)="onButtonClick()"
+        > Generate!
         </button>
       </div>
 

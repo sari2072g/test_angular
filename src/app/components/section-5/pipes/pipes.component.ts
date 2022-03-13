@@ -6,18 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pipes.component.css']
 })
 export class PipesComponent implements OnInit {
- name: string;
- date: string;
- amount: number;
- height: number;
- miles: number;
+  name: string;
+  date: string;
+  amount: number;
+  height: number;
+  miles: number;
 
- car = {
-   make: 'Toyota',
-   model:'Camry',
-   year: 2000 
-  }
-   constructor() { }
+  car = {
+    make: 'Toyota',
+    model:'Camry',
+    year: 2000 
+    }
+  constructor() { }
 
   ngOnInit(): void {
   }
@@ -37,5 +37,4 @@ export class PipesComponent implements OnInit {
   onMilesChange(value: string) {
     this.miles = parseFloat(value);
   }
-
 }

@@ -29,6 +29,6 @@ export class UniqueUsername implements AsyncValidator {
                     } else
                 return of({ noConnection: true })
             })
-        )
+        );
     }
 }

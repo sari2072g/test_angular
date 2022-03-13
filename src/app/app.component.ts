@@ -45,11 +45,11 @@ export class AppComponent {
     private wikipediaService: WikipediaService,
     private authService: AuthService,
   ) {
-    this.signedin$ = this.authService.signedin$;
+    // this.signedin$ = this.authService.signedin$;
   }
 
   ngOnInit() {
-    this.authService.checkAuth().subscribe(() => {});
-    this.authService.signout().subscribe(() => {})
+    // this.authService.checkAuth().subscribe(() => {});
+    // this.authService.signout().subscribe(() => {})
   }
 }

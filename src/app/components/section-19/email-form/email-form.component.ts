@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./email-form.component.css']
 })
 export class EmailFormComponent implements OnInit {
-email: string = '';
+  email: string = '';
   constructor() { 
    
   }

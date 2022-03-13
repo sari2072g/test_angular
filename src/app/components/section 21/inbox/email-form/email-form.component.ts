@@ -29,8 +29,5 @@ export class EmailFormComponent implements OnInit {
     if (this.emailForm.invalid) return; 
 
     this.emailSubmit.emit(this.emailForm.value);
-
-
   }
-
 }

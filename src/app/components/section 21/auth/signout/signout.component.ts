@@ -13,12 +13,11 @@ export class SignoutComponent implements OnInit {
     private authServuce: AuthService,
     private router: Router,
   ) {
-
   }
 
   ngOnInit(): void {
     this.authServuce.signout().subscribe(res => {
       this.router.navigateByUrl('/');
-    })
+    });
   }
 }

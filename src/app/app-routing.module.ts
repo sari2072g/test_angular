@@ -8,12 +8,18 @@ import { NotFoundComponent } from './components/section-7/not-found/not-found.co
 
 
 const routes: Routes = [
-  {
-    path: '', 
-    loadChildren: () =>
-      import('./components/section 21/auth/auth.module').
-        then((m) => m.AuthModule)
-  },
+  // {
+  //   path: '', 
+  //   loadChildren: () =>
+  //     import('./components/section 26/weather/weather.module').
+  //       then((m) => m.WeatherModule)
+  // },
+  // {
+  //   path: '', 
+  //   loadChildren: () =>
+  //     import('./components/section 21/auth/auth.module').
+  //       then((m) => m.AuthModule)
+  // },
   {
     path: 'inbox',
     canLoad: [AuthGuard],
@@ -45,7 +51,7 @@ const routes: Routes = [
       import('./modules/modules/modules.module').
         then((m) => m.ModulesModule)
   },
-  { path: '', component: HomeComponent },
+  // { path: '', component: HomeComponent },
   { path: '**', component: NotFoundComponent }
 ];
 

@@ -15,8 +15,7 @@ export class EquationComponent implements OnInit {
     a: new FormControl(this.randomNumber()),
     b: new FormControl(this.randomNumber()),
     answer: new FormControl('', [Validators.required]),
-  }, [MathValidators.addition('answer', 'a', 'b'),
-  ]
+  }, [MathValidators.addition('answer', 'a', 'b')]
   );
   constructor() { }
 
@@ -35,7 +34,7 @@ export class EquationComponent implements OnInit {
         return {
           numberSolved: acc.numberSolved + 1,
           startTime: acc.startTime
-        }
+        };
 
       }, { numberSolved: 0, startTime: new Date() })
     ).subscribe(({ numberSolved, startTime }) => {

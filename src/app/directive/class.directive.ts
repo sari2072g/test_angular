@@ -10,7 +10,7 @@ export class ClassDirective {
       if(classObj[key])  this.element.nativeElement.classList.add(key);
        else {
         this.element.nativeElement.classList.remove(key);
-      }
+      };
     }
   }
 }

@@ -36,6 +36,9 @@ import { SignupComponent } from './components/section 21/auth/signup/signup.comp
 import { AuthModule } from './components/section 21/auth/auth.module';
 import { AuthHttpInterceptor } from './components/section 21/auth-http-interceptor';
 import { SignoutComponent } from './components/section 21/auth/signout/signout.component';
+import { WeatherModule } from './components/section 26/weather/weather.module';
+import { NotificationsModule } from './components/section 26/notifications/notifications.module';
+import { NewsApiModule } from './components/section 26/news-api/news-api.module';
 
 @NgModule({
   declarations: [
@@ -62,18 +65,25 @@ import { SignoutComponent } from './components/section 21/auth/signout/signout.c
     AnswerHighlightDirective,
     SigninComponent,
     SignupComponent,
-    SignoutComponent,  ],
+    SignoutComponent,
+     ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    HttpClientModule,
+    HttpClientModule, 
+    WeatherModule,
+    NotificationsModule,
+    NewsApiModule,
    // CollectionModule,
     AppRoutingModule,
     AuthModule,
     FormsModule
   ],
   providers: [{
-    provide: HTTP_INTERCEPTORS, useClass: AuthHttpInterceptor, multi: true
+    provide:
+    HTTP_INTERCEPTORS,
+    useClass: AuthHttpInterceptor,
+    multi: true
   }],
   bootstrap: [AppComponent]
 })

@@ -36,7 +36,6 @@ class Car {
     speed: number;
     drive() {
         console.log('cdscsdfvdf' + this.speed);
-
     }
 }
 const csr = new Car();
@@ -47,7 +46,7 @@ const startDrive=(drive: Driveable) => {
 
 //generic class 
 export class Numberholder<T> {
-    value: T
+    value: T;
 }
 const numberholder = new Numberholder<string>();
 numberholder.value = '10';

@@ -59,7 +59,7 @@ export class PagesComponent implements OnInit {
   }
   
   checkWindowsIndex(index: number) {
-    return Math.abs(this.currentPage - index) < 5
+    return Math.abs(this.currentPage - index) < 5;
   }
 
 }

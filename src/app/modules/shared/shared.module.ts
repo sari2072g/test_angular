@@ -4,6 +4,7 @@ import { DividerComponent } from './divider/divider.component';
 import { InputComponent } from './input/input.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ModalComponent } from './modal/modal.component';
+import { PaginatorComponent } from './paginator/paginator.component';
 
 
 
@@ -11,7 +12,8 @@ import { ModalComponent } from './modal/modal.component';
   declarations: [
     DividerComponent,
     InputComponent,
-    ModalComponent
+    ModalComponent,
+    PaginatorComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { ModalComponent } from './modal/modal.component';
   ,exports:[
     DividerComponent,
     InputComponent,
-    ModalComponent
+    ModalComponent,
+    PaginatorComponent,
   ]
 })
 export class SharedModule { }

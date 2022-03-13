@@ -40,7 +40,7 @@ export class AuthService {
         return  this.http.post<any>
         (this.rootURL + 'auth/username', {
             username: username
-        })
+        });
   }
   signup(credentials: { email: SignupCreditailes }) {
     return this.http.post<SignupResponse>
@@ -53,7 +53,7 @@ export class AuthService {
         this.signedin$.next(true);
         this.username = username;
       })
-    )
+    );
   }
 
   checkAuth() {
@@ -63,7 +63,7 @@ export class AuthService {
         this.signedin$.next(authenticated);
         this.username = username;
       })
-    )
+    );
   }
   signout() {
    return this.http.post(this.rootURL + 'auth/signout', {})
@@ -71,7 +71,7 @@ export class AuthService {
       tap(() => {
         this.signedin$.next(false);
       })
-    )
+    );
   }
   signin(credentials: SigninCredentials) {
     return this.http.post<SigninResponse>(this.rootURL + 'auth/signin', credentials)
@@ -81,6 +81,5 @@ export class AuthService {
         this.username = username;
       })
     );
-
   }
 }

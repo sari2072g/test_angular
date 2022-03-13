@@ -5,8 +5,7 @@ export class Car {
        this.year = 1000; 
     }
     drive(speed: number) {
-        console.log(`Driving at ${speed}` );
-        
+        console.log(`Driving at ${speed}` );    
     }
 }
 const car = new Car();

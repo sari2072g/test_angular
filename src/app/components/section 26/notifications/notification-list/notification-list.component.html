@@ -1,0 +1,11 @@
+<div 
+    class="alert"
+    *ngFor="let massege of masseges | async"
+    [ngClass] = 
+    "massege.type === 'error' ?
+    'alert-danger': 'alert-success' "
+    >
+    {{ massege.text }}
+    <button class="close" (click)="clearMassege(massege.id)"
+    > x </button>
+</div>

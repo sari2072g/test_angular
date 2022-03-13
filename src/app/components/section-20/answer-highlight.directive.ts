@@ -18,7 +18,6 @@ export class AnswerHighlightDirective {
       } else {
         this.el.nativeElement.classList.remove('close');
       }
-    })
+    });
   }
-
 }

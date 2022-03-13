@@ -6,16 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./views-home.component.css']
 })
 export class ViewsHomeComponent implements OnInit {
-stats = [
-  { value: 22, label: '# of Users' },
-  { value: 900, label: 'Revenu' },
-  { value: 50, label: 'Reviews' },
-];
+  stats = [
+    { value: 22, label: '# of Users' },
+    { value: 900, label: 'Revenu' },
+    { value: 50, label: 'Reviews' },
+  ];
 
-items = [
-  { image: '', title: 'Couch', description: 'This is a fantastic couch to sit on' },
-  { image: '', title: 'Dresser', description: 'This is a great  dresser to put stuff on' },
- ];
+  items = [
+    { image: '', title: 'Couch', description: 'This is a fantastic couch to sit on' },
+    { image: '', title: 'Dresser', description: 'This is a great  dresser to put stuff on' },
+  ];
   constructor() { }
 
   ngOnInit(): void {
@@ -31,5 +31,4 @@ items = [
       { image: '', title: 'Dresser', description: 'This is a great  dresser to put stuff on' },
      ];
   }
-
 }

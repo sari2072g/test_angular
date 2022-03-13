@@ -6,7 +6,7 @@ import { Component, OnInit, ElementRef, Output, EventEmitter } from '@angular/co
   styleUrls: ['./modal.component.css']
 })
 export class ModalComponent implements OnInit {
-@Output() close = new EventEmitter();
+  @Output() close = new EventEmitter();
   constructor(private el: ElementRef ) { }
 
   ngOnInit(): void {

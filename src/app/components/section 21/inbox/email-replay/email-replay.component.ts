@@ -15,7 +15,7 @@ export class EmailReplayComponent {
   constructor(private emailService: EmailService) { }
 
   ngOnChanges(): void {
-    const text = this.email.text.replace(/\/n/gi,'\n')
+    const text = this.email.text.replace(/\/n/gi,'\n');
 
     this.email = {
       ...this.email,
@@ -30,5 +30,4 @@ export class EmailReplayComponent {
       this.showModal = false;
     });
   }
-
 }

@@ -6,11 +6,11 @@ const substract =  (a: number, b: number)  : number => {
     return a - b;
 };
 
-function divide (a: number, b:number): number {
+function divide (a: number, b: number): number {
     return a / b;
 
 };
-const multiPly = function(a: number, b:number): number {
+const multiPly = function(a: number, b: number): number {
     return a * b;
 };
 

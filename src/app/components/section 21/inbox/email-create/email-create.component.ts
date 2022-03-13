@@ -35,5 +35,4 @@ email: Email;
       this.showModal = false;
     });
   }
-
 }
